@@ -2,12 +2,14 @@ package dev.phani.roleanduribasedsecurity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 @SpringBootApplication
-public class RoleanduribasedsecurityApplication {
+@EnableWebSecurity
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(RoleanduribasedsecurityApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
